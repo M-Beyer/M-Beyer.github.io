@@ -2,23 +2,25 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+description: Diplomand @ <a href="https://www.bosch.de/en/our-company/bosch-in-germany/renningen/">Bosch, Renningen</a>.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profile.JPG
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p> <i class="fa fa-fw fa-map-marker-alt"></i> Dresden, Germany</p>
+    <p> <i class="ai fa-fw ai-google-scholar"></i> <a href="https://scholar.google.com/citations?user=iX4DLO0AAAAJ&hl">Google Scholar</a></p>
+    <p> <i class="fab fa-fw fa-linkedin"></i> <a href="https://www.linkedin.com/in/beyer-michael">LinkedIn</a></p>
+    <p> <i class="fab fa-fw fa-github"></i> <a href="https://github.com/M-Beyer">GitHub</a></p>
 
-news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+news: false # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi, I'm Michael! I study electrical engineering at the [Technical University Dresden](https://tu-dresden.de/ing/elektrotechnik?set_language=en). Currently I am writing my diploma thesis (equiv. to [M.Sc.](https://en.wikipedia.org/wiki/Thesis#Germany)) in cooperation with the corporate sector research and advance engineering of Robert Bosch GmbH in Renningen, Germany. 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+In my research I investigate the reliability of neural networks in safety-critical applications when subject to common random hardware faults (e.g. bit flips) during execution. 
+Related to my previous work, my diploma thesis focuses on fault-resilient, hardware-efficient neural networks for embedded systems.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+However, in general I am interested in (reliable) artificial intelligence, (reliable) machine learning and computer vision.

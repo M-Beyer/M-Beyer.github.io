@@ -1,70 +1,49 @@
 ---
 ---
-
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,}
+@inproceedings{Beyer2020,
+  author   = {M. Beyer and A. Morozov and E. Valiev and C. Schorn and L. Gauerhof and K. Ding and K. Janschek},
+  title    = {Fault Injectors for TensorFlow: Evaluation of the Impact of Random Hardware Faults on Deep CNNs},
+  abstract = {Today, Deep Learning (DL) enhances almost every industrial sector, including safety-critical areas. The next generation of safety standards will define appropriate verification techniques for DL-based applications and propose adequate fault tolerance mechanisms. DL-based applications, like any other software, are susceptible to common random hardware faults such as bit flips, which occur in RAM and CPU registers. Such faults can lead to silent data corruption. Therefore, it is crucial to develop methods and tools that help to evaluate how DL components operate under the presence of such faults. In this paper, we introduce two new Fault Injection (FI) frameworks InjectTF and InjectTF2 for TensorFlow 1 and TensorFlow 2, respectively. Both frameworks are available on GitHub and allow the configurable injection of random faults into Neural Networks (NN). In order to demonstrate the feasibility of the frameworks, we also present the results of FI experiments conducted on four VGG-based Convolutional NNs using two image sets. The results demonstrate how random bit flips in the output of particular mathematical operations and layers of NNs affect the classification accuracy. These results help to identify the most critical operations and layers, compare the reliability characteristics of functionally similar NNs, and introduce selective fault tolerance mechanisms.},
+  booktitle= {{30th European Safety and Reliability Conference and 15th Probabilistic Safety Assessment and Management Conference (ESREL2020 PSAM15)}},
+  year     = {2020},
+  code={https://github.com/mbsa-tud/},
+  abbr={ESREL PSAM},
+  pdf={https://www.rpsonline.com.sg/proceedings/esrel2020/pdf/5754.pdf}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
+@inproceedings{Morozov2020,
+  author   = {A. Morozov and E. Valiev and M. Beyer and K. Ding and L. Gauerhof and C. Schorn},
+  title    = {Bayesian Model for Trustworthiness Analysis of Deep Learning Classifiers},
+  abstract = {In the near future, Artificial Intelligence methods will inevitably enter safety-critical areas. Deep Learning software, deployed on standard comput- ing hardware, is prone to random hardware faults such as bit flips that can result in silent data cor- ruption. We have performed fault injection ex- periments on three Convolution Neural Network (CNN) image classifiers, including VGG16 and VGG19. Besides the fact that the bit flips indeed drop the classification accuracy, we have observed that these faults result not in random misclassifica- tion but tend to particular erroneous sets of classes. This fact shall be taken into account to design a reliable and safe system. For example, we might consider re-running the classifier if it yields a class for such an erroneous set. This paper discusses the results of our fault injection experiments and introduces a new Bayesian Network (BN) model that aggregates these results and enables numeri- cal evaluation of the performance of the CNNs un- der the influence of random hardware faults. We demonstrate the application of the developed BN model for the trustworthiness analysis. In particu- lar, we show how to evaluate the misclassification probabilities for each resulting class, for the vary- ing probability of random bit-flips.},
+  booktitle={{Proceedings of the Workshop on Artificial Intelligence Safety 2020 co-located with the 29th International Joint Conference on Artificial Intelligence and the 17th Pacific Rim International Conference on Artificial Intelligence (IJCAI-PRICAI 2020)}},
+  year     = {2020},
+  pdf={http://ceur-ws.org/Vol-2640/paper_6.pdf},
+  code={https://github.com/mbsa-tud/InjectTF2},
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  selected={true}
+@inproceedings{valiev2020evaluation,
+  title={Evaluation of the Impact of Random Computing Hardware Faults on the Performance of Convolutional Neural Networks},
+  author={E. {Valiev} and A. {Morozov} and M. {Beyer} and N. {Yusupova} and K. {Janschek}},
+  abstract={Artificial Intelligence (AI) rapidly spreads across high-tech industries and enters almost every safety-critical area such as automotive, aerospace, and medical industries. However, like any other software, AI-based applications are prone to random hardware faults such as a random bit flip in CPU, RAM, or network. Therefore, it is essential to understand how various hardware faults affect the performance and accuracy of AI applications. This paper provides a general description and particular conceptual and implementational features of our recently introduced Fault Injection (FI) framework InjectTF2. InjectTF2 is developed using the TensorFlow 2 API and allows the user to specify fault parameters and perform layer-wise fault injection into the TensorFlow 2 neural networks. It enables the automated injection of random bitflips. The paper describes the software architecture of the framework. The framework is open source and freely available on the GitHub. The application of InjectTF2 is demonstrated with extensive fault injection experiments on a Convolutional Neural Network (CNN) trained using the GTSRB dataset. The experiments’ results show how random bitflips in the outputs of the CNNs layers affect the classification accuracy. Such results support not only numerical analysis of reliability and safety characteristics but also help to identify the most critical CNN layers for more robust and fault-tolerant design.},
+  booktitle={8th Scientific Conference on Information Technologies for Intelligent Decision Making Support (ITIDS 2020)},
+  pages={307--312},
+  year={2020},
+  organization={Atlantis Press},
+  pdf={https://download.atlantis-press.com/proceedings/itids-20/125946024},
+  code={https://github.com/mbsa-tud/InjectTF2},
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@inproceedings{8990333,
+  author={M. {Beyer} and A. {Morozov} and K. {Ding} and S. {Ding} and K. {Janschek}},
+  booktitle={2019 IEEE International Symposium on Software Reliability Engineering Workshops (ISSREW)}, 
+  title={Quantification of the Impact of Random Hardware Faults on Safety-Critical AI Applications: CNN-Based Traffic Sign Recognition Case Study}, 
+  year={2019},
+  pages={118-119},
+  abstract={Nowadays, Artificial Intelligence (AI) rapidly enters almost every safety-critical domain, including the automotive industry. The next generation of functional safety standards has to define appropriate verification and validation techniques and propose adequate fault tolerance mechanisms. Several AI frameworks, such as TensorFlow by Google, have already proven to be effective and reliable platforms. However, similar to any other software, AI-based applications are prone to common random hardware faults, e.g., bit-flips which may occur in RAM or CPU registers and might lead to silent data corruption. Therefore, it is crucial to understand how different hardware faults affect the accuracy of AI applications. This paper introduces our new fault injection framework for TensorFlow and results of first experiments conducted on a Convolutional Neural Network (CNN) based traffic sign classifier. These results demonstrate the feasibility of the fault injection framework. In particular, they help to identify the most critical parts of a neural network under test.},
+  doi={10.1109/ISSREW.2019.00058},
+  ISSN={},
+  month={Oct},
+  code={https://github.com/mbsa-tud/InjectTF},
+  abbr={ISSRE},
+  pdf={https://ieeexplore.ieee.org/abstract/document/8990333/}
 }

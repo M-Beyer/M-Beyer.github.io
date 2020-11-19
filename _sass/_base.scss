@@ -336,6 +336,7 @@ footer.sticky-bottom {
         font-weight: bolder;
       }
       .author {
+	color: var(--global-grey-color-publications);
         a {
           border-bottom: 1px dashed var(--global-theme-color);
           &:hover {
@@ -396,6 +397,9 @@ footer.sticky-bottom {
       }
       div.abstract.hidden.open {
         border-color: $grey-color;
+      }
+      div.periodical {
+        color: var(--global-grey-color-publications);
       }
     }
   }
