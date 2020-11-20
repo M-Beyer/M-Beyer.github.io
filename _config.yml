@@ -107,7 +107,7 @@ kramdown:
 
 # Includes & excludes
 include: ['_pages']
-exclude: [vendor, docker_ghpages.sh, docker_jekyll.sh]
+exclude: [vendor, docker_build_ghpages.sh, docker_ghpages.sh, docker_jekyll.sh]
 
 # Plug-ins
 plugins:
