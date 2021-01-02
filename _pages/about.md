@@ -21,6 +21,6 @@ social: false # includes social icons at the bottom of the page
 Hi, I'm Michael! I study electrical engineering at the [Technical University Dresden](https://tu-dresden.de/ing/elektrotechnik?set_language=en). Currently I am writing my diploma thesis (equiv. to [M.Sc.](https://en.wikipedia.org/wiki/Thesis#Germany)) in cooperation with the corporate sector research and advance engineering of Robert Bosch GmbH in Renningen, Germany. 
 
 In my research I investigate the reliability of neural networks in safety-critical applications when subject to common random hardware faults (e.g. bit flips) during execution. 
-Related to my previous work, my diploma thesis focuses on fault-resilient, hardware-efficient neural networks for embedded systems.
+Related to my previous work, my diploma thesis focuses on error-resilient, hardware-efficient neural networks for embedded systems.
 
-However, in general I am interested in (reliable) artificial intelligence, (reliable) machine learning and computer vision.
+However, in general I am interested in autonomous systems, artificial intelligence, machine learning, and computer vision.
